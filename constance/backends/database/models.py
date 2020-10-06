@@ -4,7 +4,7 @@ from django.core.exceptions import ImproperlyConfigured
 from django.utils.translation import ugettext_lazy as _
 
 try:
-    from picklefield import PickledObjectField
+    from picklefield.fields import PickledObjectField
 except ImportError:
     raise ImproperlyConfigured("Couldn't find the the 3rd party app "
                                "django-picklefield which is required for "
